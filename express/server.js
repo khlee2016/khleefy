@@ -7,12 +7,12 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<h1>Hello from khlee Express.js!</h1>');
+  res.write('<h1>Hello from khlee 2023 Express.js!</h1>');
   res.end();
 });
 router.get('/hello', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<h1>Hello from khlee hello!</h1>');
+  res.write('<h1>Hello from khlee 2023 hello!</h1>');
   res.end();
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
